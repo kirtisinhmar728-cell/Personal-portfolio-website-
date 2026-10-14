@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kirti | Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080b16;
+            color: #f5f5ff;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #101426;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 1px solid #292344;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #b78aff;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #b78aff;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .home {
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .home h3 {
+            color: #b78aff;
+            font-size: 22px;
+        }
+
+        .home h1 {
+            font-size: 52px;
+            margin: 5px 0;
+        }
+
+        .home h2 {
+            color: #b78aff;
+            margin-bottom: 15px;
+        }
+
+        .home p {
+            max-width: 600px;
+            color: #d2d4e4;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 11px 24px;
+            background: #9560ed;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #7541cb;
+        }
+
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .section-title span {
+            color: #b78aff;
+        }
+
+        .about, .projects {
+            background: #101426;
+        }
+
+        .about p {
+            color: #d2d4e4;
+            max-width: 800px;
+        }
+
+        .info {
+            margin-top: 18px;
+        }
+
+        .info p {
+            margin: 7px 0;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 18px;
+        }
+
+        .skill-card {
+            background: #151a2d;
+            border: 1px solid #383052;
+            padding: 25px 12px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: #b78aff;
+        }
+
+        .skill-card span {
+            display: block;
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .project-card {
+            background: #171b30;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #393050;
+            max-width: 650px;
+        }
+
+        .project-card h3 {
+            color: #b78aff;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #d2d4e4;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            overflow-wrap: anywhere;
+        }
+
+        .contact a {
+            color: #c7a7ff;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #101426;
+            text-align: center;
+            padding: 20px;
+            color: #d2d4e4;
+            border-top: 1px solid #292344;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+
+            .home h1 {
+                font-size: 40px;
+            }
+
+            .home h2 {
+                font-size: 21px;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Kirti ♡</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <h3>HELLO, I'M</h3>
+        <h1>Kirti</h1>
+        <h2>Web Designer | BCA Student</h2>
+
+        <p>
+            Welcome to my personal portfolio!
+            I am a BCA student who enjoys learning
+            web designing and creating beautiful websites.
+            I am improving my skills every day.
+        </p>
+
+        <a href="#projects" class="button">View My Project</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <p>
+            Hi! I am Kirti, a BCA student at GRIMT Nachron,
+            Haryana. I am interested in web designing and
+            front-end development. I enjoy learning HTML
+            and CSS and exploring new technologies.
+            My goal is to become a skilled web developer
+            and build a successful career in technology.
+        </p>
+
+        <div class="info">
+            <p><strong>Education:</strong> BCA, 5th Semester</p>
+            <p><strong>College:</strong> GRIMT Nachron</p>
+            <p><strong>Session:</strong> 2024–2027</p>
+            <p><strong>Location:</strong> Haryana, India</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <div class="skills">
+            <div class="skill-card">
+                <span>🌐</span>
+                HTML
+            </div>
+
+            <div class="skill-card">
+                <span>🎨</span>
+                CSS
+            </div>
+
+            <div class="skill-card">
+                <span>💻</span>
+                Web Designing
+            </div>
+
+            <div class="skill-card">
+                <span>📚</span>
+                JavaScript (Learning)
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+
+            <p><strong>Technology:</strong> HTML and CSS</p>
+
+            <p>
+                This is my personal portfolio website.
+                It introduces me, my education, my skills
+                and my web designing project.
+            </p>
+
+            <a href="#home" class="button">Back to Home</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <p>
+            Feel free to contact me regarding
+            web designing and learning opportunities.
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:kirtisinhmar728@gmail.com">
+                kirtisinhmar728@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <strong>Location:</strong> Haryana, India
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Kirti | Personal Portfolio Website</p>
+        <p>Made with HTML and CSS 💜</p>
+    </footer>
+
+</body>
+</html>
